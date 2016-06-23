@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+
+      <div class="jumbotron text-center">
+        <h1>Genomeasy</h1>
+        <p class="lead">Genomeasy is a browser-based genome viewer. It is designed to facilitate the investigation of evidence for genomic variants within larger web applications.</p>
+          <p>It's OpenSource!</p>
+          <a href="#" role="button" class="btn btn-info">How it works</a>
+      </div>
+
+</div>
