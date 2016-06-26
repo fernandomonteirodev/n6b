@@ -10,7 +10,7 @@
     "test": "mocha",
     "watch": "npm-run-all --parallel watch:*",
     "watch:css": "nodemon -e scss -w public/css -x npm run build:css",
-    "deploy": "deploy.sh"
+    "deploy": "./bin/deploy.sh"
   },
   "dependencies": {
     "async": "^1.5.2",
